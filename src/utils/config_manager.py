@@ -19,16 +19,18 @@ class ConfigManager:
             "CLIENT_ID": None,
             "DEVICE_ID": None,
             "NETWORK": {
-                "OTA_VERSION_URL": "https://api.tenclass.net/xiaozhi/ota/",
+                #"OTA_VERSION_URL": "https://api.tenclass.net/xiaozhi/ota/",
+                "OTA_VERSION_URL": "http://52.237.81.86:8002/xiaozhi/ota/",
                 "WEBSOCKET_URL": None,
                 "WEBSOCKET_ACCESS_TOKEN": None,
                 "MQTT_INFO": None,
                 "ACTIVATION_VERSION": "v2",  # 可选值: v1, v2
-                "AUTHORIZATION_URL": "https://xiaozhi.me/",
+                #"AUTHORIZATION_URL": "https://xiaozhi.me/",
+                "AUTHORIZATION_URL": "http://52.237.81.86:8001/",
             },
         },
         "WAKE_WORD_OPTIONS": {
-            "USE_WAKE_WORD": False,
+            "USE_WAKE_WORD": True,
             "MODEL_PATH": "models/vosk-model-small-cn-0.22",
             "WAKE_WORDS": ["小智", "小美"],
         },
@@ -38,7 +40,7 @@ class ConfigManager:
             "frame_height": 480,
             "fps": 30,
             "Local_VL_url": "https://open.bigmodel.cn/api/paas/v4/",
-            "VLapi_key": "",
+            "VLapi_key": "53c4232c500f4af0a64723d9cfda5bbf.PdHKGvbRhjzP6T65",
             "models": "glm-4v-plus",
         },
         "SHORTCUTS": {
